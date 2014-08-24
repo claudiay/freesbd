@@ -3,9 +3,11 @@ import os
 from flask import Flask, render_template, abort
 from distros_installs import distros_installs
 
-
 app = Flask(__name__)
 app._static_folder = os.getcwd() + '/static'
+if app.debug:
+    from flaskext.lesscss import lesscss
+    lesscss(app)
 
 @app.route('/')
 def index():
