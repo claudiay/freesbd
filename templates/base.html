@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="static/assets/ico/favicon.ico">
+
+    <title>The FreeBSD Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="masthead">
+        <div class="row">
+          <div class="col-md-8">
+            <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo-full.png') }}"></a>
+          </div>
+          <div class="col-md-4">
+            <div class="base-sidemasthead">
+              <div class="base-langs">
+                <ul>
+                  <li><a href="">de</a> | </li>
+                  <li><a href="">en</a> | </li>
+                  <li><a href="">es</a> | </li>
+                  <li><a href="">fr</a> | </li>
+                  <li><a href="">hu</a> | </li>
+                  <li><a href="">it</a> | </li>
+                  <li><a href="">jp</a> | </li>
+                  <li><a href="">nl</a> | </li>
+                  <li><a href="">ru</a> | </li>
+                  <li><a href="">zh_CN</a></li>
+                </ul>
+              </div>
+              <div class="form-inline base-search">
+                <form>
+                  <div class="input-group">
+                    <input class="form-control" type="search" placeholder="search">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-justified">
+          <li><a href="{{ url_for('about') }}">about</a></li>
+          <li><a href="{{ url_for('docs') }}">docs</a></li>
+          <li><a href="{{ url_for('community') }}">community</a></li>
+          <li><a href="{{ url_for('developers') }}">developers</a></li>
+          <li><a href="{{ url_for('support') }}">support</a></li>
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div class="row">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+
+      <!-- Site footer -->
+      <div class="footer">
+        <div class="container">
+        <div class="base-submenu">
+          <ul>
+            <li>
+              <b>Shortcuts:</b>
+              <a href="">Mailing List</a> | 
+              <a href="">Report a Bug</a> |
+              <a href="">FAQ</a> |
+              <a href="">Handbook</a> |
+              <a href="">Ports</a>
+            </li>
+            <li>
+              <b>About:</b>
+              <a href="">Introduction</a> | 
+              <a href="">Advocacy</a> |
+              <a href="">Marketing</a> |
+              <a href="">Privacy Policy</a>
+            </li>
+            <li>
+              <b>Community:</b>
+              <a href="">Mailing List</a> | 
+              <a href="">Forums</a> |
+              <a href="">User Groups</a> |
+              <a href="">Events</a> |
+              <a href="">Q&amp;A (external)</a>
+            </li>
+            <li>
+              <b>Support:</b>
+              <a href="">Vendors</a> | 
+              <a href="">Security Information</a> |
+              <a href="">Bug Reports</a>
+            </li>
+            <li>
+              <b>Foundation:</b>
+              <a href="">Site</a> | 
+              <a href="">Monetary Donations</a> |
+              <a href="">Hardware Donations</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <p><a href="#">Site Map</a> | <a href="#">Legal Notices</a> | &copy; 1995–2014 The FreeBSD Project. All rights reserved. The mark FreeBSD is a registered trademark of The FreeBSD Foundation and is used by The FreeBSD Project with the permission of <a href="https://www.freebsdfoundation.org/documents/Guidelines.shtml">The FreeBSD Foundation</a>. <a href="#">Contact</a></p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript">
+      console.log('help me');
+    </script>
+    {% block js %}
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="col-md-3">
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">man pages</a></li>
+    <li><a href="#">handbook</a></li>
+    <li><a href="#">faq</a></li>
+    <li><a href="#">publications</a></li>
+    <li><a href="#">beginners</a></li>
+    <li><a href="#">documentation project</a></li>
+    <li><a href="#">archive</a></li>
+  </ul>
+</div>
+<div class="col-md-9">
+  <div class="row">
+  	{% block innercontent %}
+  	{% endblock %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="col-md-3">
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">About</a></li>
+    <li><a href="#">Advocacy</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Media</a></li>
+    <li><a href="#">Donations</a></li>
+    <li><a href="#">News</a></li>
+  </ul>
+</div>
+<div class="col-md-9">
+  <div class="row">
+  	{% block innercontent %}
+  	{% endblock %}
+  </div>
+</div>
+{% endblock %}
