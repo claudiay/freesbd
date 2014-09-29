@@ -8,15 +8,20 @@ from flask.ext.babel import Babel
 
 app = Flask(__name__)
 app._static_folder = os.getcwd() + '/website/static'
+app.config['SECRET_KEY'] = os.urandom(64)
 if app.debug:
     from flaskext.lesscss import lesscss
     lesscss(app)
 #app.config.from_pyfile('translations.cfg')
-babel = Babel(app)
+babel = Babel(app, default_locale="en_US.ISO8859-1")
 
 
 @babel.localeselector
 def get_locale():
+    lang = request.cookies.get('lang')
+    if lang in config.LANGUAGES:
+        print "got a lang: "
+        return lang
     return request.accept_languages.best_match(config.LANGUAGES)
 
 @app.route('/')
