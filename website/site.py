@@ -6,7 +6,7 @@ from distros_installs import distros_installs
 from flask.ext.babel import Babel
 
 app = Flask(__name__)
-app._static_folder = os.getcwd() + '/static'
+app._static_folder = os.getcwd() + '/website/static'
 if app.debug:
     from flaskext.lesscss import lesscss
     lesscss(app)

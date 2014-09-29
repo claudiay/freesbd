@@ -8,7 +8,7 @@
         <h3>{% trans %}The FreeBSD Project{% endtrans %}</h3>
         <p>{% trans %}FreeBSD is an operating system for a variety of platforms which focuses on features, speed, and stability. It is derived from BSD, the version of UNIX® developed at the University of California, Berkeley. It is developed and maintained by a large community.{% endtrans %}</p>
         <center>
-          <h3><a href="">{% trans %}Get Involved'){% endtrans %} &#187;</a></h3>
+          <h3><a href="">{% trans %}Get Involved{% endtrans %} &#187;</a></h3>
         </center>
       </div>
       <div class="col-md-4">
@@ -20,7 +20,7 @@
             <li>{% trans %}Upcoming{% endtrans %}: <a href="">10.1</a></li>
             <li><a href="">{% trans %}Support Lifecycle{% endtrans %}</a></li>
           </ul>
-          <button type="button" class="btn btn-default btn-block">donate</button>
+          <button type="button" class="btn btn-default btn-block">{% trans %}donate{% endtrans %}</button>
         </div>
       </div>
     </div>
@@ -29,34 +29,34 @@
   <div class ="row main-products">
     <div class="col-md-3">
       <div class="details">
-        <h2><a href="{{ url_for('simple_install', distro='pcbsd') }}">Desktop<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
-        <p>PC-BSD is a user-friendly operating system based on FreeBSD. Harnessing all the tools powerful tools of FreeBSD into an easy to use and install system.</p>
+        <h2><a href="{{ url_for('simple_install', distro='pcbsd') }}">{% trans %}Desktop{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
+        <p>{% trans %}PC-BSD is a user-friendly operating system based on FreeBSD. Harnessing all the tools powerful tools of FreeBSD into an easy to use and install system.{% endtrans %}</p>
       </div>
     </div>
     <div class="col-md-3">
       <div class="details">
-        <h2><a href="{{ url_for('simple_install', distro='freebsd10-0') }}">Server<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
-        <p>Its advanced networking, security and storage features have made FreeBSD the platform of choice for many of the busiest web sites.</p>
-        <p>It is easy to setup and running on your personal hardware, or even skipping that step by hosting your web applications in the cloud.</p>
+        <h2><a href="{{ url_for('simple_install', distro='freebsd10-0') }}">{% trans %}Server{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
+        <p>{% trans %}Its advanced networking, security and storage features have made FreeBSD the platform of choice for many of the busiest web sites.{% endtrans %}</p>
+        <p>{% trans %}It is easy to setup and running on your personal hardware, or even skipping that step by hosting your web applications in the cloud.{% endtrans %}</p>
       </div>
     </div>
     <div class="col-md-3">
       <div class="details">
-        <h2><a href="{{ url_for('simple_install', distro='freenas') }}">Appliance<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
-        <p>FreeNAS is really cool, but I have no idea why they decided to use dojango.</p>
-        <p>Probably for the same reason the FreeBSD.org website looks the way it does.</p>
+        <h2><a href="{{ url_for('simple_install', distro='freenas') }}">{% trans %}Appliance{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
+        <p>{% trans %}FreeNAS is really cool, but I have no idea why they decided to use dojango.{% endtrans %}</p>
+        <p>{% trans %}Probably for the same reason the FreeBSD.org website looks the way it does.{% endtrans%}</p>
       </div>
     </div>
     <div class="col-md-3 last">
       <div class="details">
-        <h2><a href="{{ url_for('simple_install', distro='custom') }}">Custom<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
-        <p>FreeBSD is deeply customizable to fit your exact needs. This makes it perfect for specialized tasks with great demand for performance.</p>
+        <h2><a href="{{ url_for('simple_install', distro='custom') }}">{% trans %}Custom{% endtrans %}<span class="pull-right glyphicon glyphicon-chevron-right"></span></a></h2>
+        <p>{% trans %}FreeBSD is deeply customizable to fit your exact needs. This makes it perfect for specialized tasks with great demand for performance.{% endtrans %}</p>
       </div>
     </div>
   </div>
   <div class="row main-news">
     <div class="col-lg-3">
-      <h3>Latest News</h3>
+      <h3>{% trans %}Latest News{% endtrans %}</h3>
       <ul>
         {% for n in news %}
         <li>
@@ -65,12 +65,12 @@
         </li>
         {% endfor %}
         <li>
-          <a href="#" class="news-item">More News</a>
+          <a href="#" class="news-item">{% trans %}More News{% endtrans %}</a>
         </li>
       </ul>
     </div>
     <div class="col-lg-3">
-      <h3>Upcoming Events</h3>
+      <h3>{% trans %}Upcoming Events{% endtrans %}</h3>
       <ul>
         {% for n in events %}
         <li>
@@ -79,12 +79,12 @@
         </li>
         {% endfor %}
         <li>
-          <a href="#" class="news-item">More News</a>
+          <a href="#" class="news-item">{% trans %}More News{% endtrans %}</a>
         </li>
       </ul>
     </div>
     <div class="col-lg-3">
-      <h3>Press</h3>
+      <h3>{% trans %}Press{% endtrans %}</h3>
       <ul>
         {% for n in press %}
         <li>
@@ -93,12 +93,12 @@
         </li>
         {% endfor %}
         <li>
-          <a href="#" class="news-item">More News</a>
+          <a href="#" class="news-item">{% trans %}More News{% endtrans %}</a>
         </li>
       </ul>
     </div>
     <div class="col-lg-3">
-      <h3>Security Advisories</h3>
+      <h3>{% trans %}Security Advisories{% endtrans %}</h3>
       <ul>
         {% for n in security %}
         <li>
@@ -107,7 +107,7 @@
         </li>
         {% endfor %}
         <li>
-          <a href="#" class="news-item">More News</a>
+          <a href="#" class="news-item">{% trans %}More News{% endtrans %}</a>
         </li>
       </ul>
     </div>
