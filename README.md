@@ -12,22 +12,12 @@ bash setup.sh
 
 Translations:
 
-To extract strings for translation:
-```bash
-pybabel extract -F babel.cfg -o messages.pot website/
-```
-
-For new language (ex: 'de'),
-```bash
-pybabel init -i messages.pot -d website/translations -l de
-```
-
-After editing changes, to compile for use:
+To compile for use (for new git clones, or after changes):
 ```bash
 pybabel compile -d website/translations
 ```
 
-If text changes, to get new strings:
+If text changes in templates, to get new strings:
 ```bash
 pybabel update -i messages.pot -d website/translations
 ```
