@@ -10,7 +10,7 @@ app._static_folder = os.getcwd() + '/static'
 if app.debug:
     from flaskext.lesscss import lesscss
     lesscss(app)
-#app.config.from_pyfile('mysettings.cfg')
+#app.config.from_pyfile('translations.cfg')
 babel = Babel(app)
 
 @babel.localeselector
