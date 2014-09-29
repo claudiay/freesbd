@@ -27,5 +27,5 @@ source env/bin/activate && pip install -r $cwd/requirements.txt
 
 echo "Setup is done!"
 echo "Starting up..."
-source env/bin/activate && python site.py
+source env/bin/activate && python website/site.py
 

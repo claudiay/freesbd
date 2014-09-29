@@ -12,6 +12,11 @@ bash setup.sh
 
 Translations:
 
+To extract strings for translation:
+```bash
+pybabel extract -F babel.cfg -o messages.pot translations/
+```
+
 For new language (ex: 'de'),
 ```bash
 pybabel init -i messages.pot -d translations -l de
