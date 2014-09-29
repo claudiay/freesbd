@@ -1,0 +1,129 @@
+# Translations template for PROJECT.
+# Copyright (C) 2014 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2014-09-28 23:02-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+
+#: website/templates/index.html:8
+msgid "The FreeBSD Project"
+msgstr ""
+
+#: website/templates/index.html:9
+msgid ""
+"FreeBSD is an operating system for a variety of platforms which focuses "
+"on features, speed, and stability. It is derived from BSD, the version of"
+" UNIX® developed at the University of California, Berkeley. It is "
+"developed and maintained by a large community."
+msgstr ""
+
+#: website/templates/index.html:11
+msgid "Get Involved"
+msgstr ""
+
+#: website/templates/index.html:16
+msgid "Latest releases"
+msgstr ""
+
+#: website/templates/index.html:18
+msgid "Production"
+msgstr ""
+
+#: website/templates/index.html:19 website/templates/index.html:20
+msgid "Upcoming"
+msgstr ""
+
+#: website/templates/index.html:21
+msgid "Support Lifecycle"
+msgstr ""
+
+#: website/templates/index.html:23
+msgid "donate"
+msgstr ""
+
+#: website/templates/index.html:32
+msgid "Desktop"
+msgstr ""
+
+#: website/templates/index.html:33
+msgid ""
+"PC-BSD is a user-friendly operating system based on FreeBSD. Harnessing "
+"all the tools powerful tools of FreeBSD into an easy to use and install "
+"system."
+msgstr ""
+
+#: website/templates/index.html:38
+msgid "Server"
+msgstr ""
+
+#: website/templates/index.html:39
+msgid ""
+"Its advanced networking, security and storage features have made FreeBSD "
+"the platform of choice for many of the busiest web sites."
+msgstr ""
+
+#: website/templates/index.html:40
+msgid ""
+"It is easy to setup and running on your personal hardware, or even "
+"skipping that step by hosting your web applications in the cloud."
+msgstr ""
+
+#: website/templates/index.html:45
+msgid "Appliance"
+msgstr ""
+
+#: website/templates/index.html:46
+msgid ""
+"FreeNAS is really cool, but I have no idea why they decided to use "
+"dojango."
+msgstr ""
+
+#: website/templates/index.html:47
+msgid ""
+"Probably for the same reason the FreeBSD.org website looks the way it "
+"does."
+msgstr ""
+
+#: website/templates/index.html:52
+msgid "Custom"
+msgstr ""
+
+#: website/templates/index.html:53
+msgid ""
+"FreeBSD is deeply customizable to fit your exact needs. This makes it "
+"perfect for specialized tasks with great demand for performance."
+msgstr ""
+
+#: website/templates/index.html:59
+msgid "Latest News"
+msgstr ""
+
+#: website/templates/index.html:68 website/templates/index.html:82
+#: website/templates/index.html:96 website/templates/index.html:110
+msgid "More News"
+msgstr ""
+
+#: website/templates/index.html:73
+msgid "Upcoming Events"
+msgstr ""
+
+#: website/templates/index.html:87
+msgid "Press"
+msgstr ""
+
+#: website/templates/index.html:101
+msgid "Security Advisories"
+msgstr ""
+

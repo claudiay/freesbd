@@ -14,7 +14,7 @@ Translations:
 
 To extract strings for translation:
 ```bash
-pybabel extract -F babel.cfg -o messages.pot translations/
+pybabel extract -F babel.cfg -o messages.pot website/
 ```
 
 For new language (ex: 'de'),
