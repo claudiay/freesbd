@@ -34,17 +34,17 @@
           <div class="col-md-4">
             <div class="base-sidemasthead">
               <div class="base-langs">
-                <ul>
-                  <li><a href="">de</a> | </li>
-                  <li><a href="">en</a> | </li>
-                  <li><a href="">es</a> | </li>
-                  <li><a href="">fr</a> | </li>
-                  <li><a href="">hu</a> | </li>
-                  <li><a href="">it</a> | </li>
-                  <li><a href="">jp</a> | </li>
-                  <li><a href="">nl</a> | </li>
-                  <li><a href="">ru</a> | </li>
-                  <li><a href="">zh_CN</a></li>
+                <ul id="lang-choice">
+                  <li><a data-lang='de_DE.ISO8859-1'>de</a> | </li>
+                  <li><a data-lang='en_US.ISO8859-1'>en</a> | </li>
+                  <li><a data-lang='es_ES.ISO8859-1'>es</a> | </li>
+                  <li><a data-lang='fr_FR.ISO8859-1'>fr</a> | </li>
+                  <li><a data-lang='hu_HU.ISO8859-2'>hu</a> | </li>
+                  <li><a data-lang='it_IT.ISO8859-15'>it</a> | </li>
+                  <li><a data-lang='ja_JP.eucJP'>jp</a> | </li>
+                  <li><a data-lang='nl_NL.ISO8859-1'>nl</a> | </li>
+                  <li><a data-lang='ru_RU.KOI8-R'>ru</a> | </li>
+                  <li><a data-lang='zh_CN.UTF-8'>zh_CN</a></li>
                 </ul>
               </div>
               <div class="form-inline base-search">
@@ -129,8 +129,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.cookie.js') }}"></script>
     <script type="text/javascript">
-      console.log('help me');
+	$('#lang-choice li a').click(function() {
+	  event.preventDefault();
+	  console.log($(this).attr("data-lang"));
+	  $.cookie("lang", $(this).attr("data-lang"), {expires: 365, path: '/'});
+	  location.reload();
+	});
     </script>
     {% block js %}
     {% endblock %}

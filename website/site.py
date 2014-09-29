@@ -20,7 +20,6 @@ babel = Babel(app, default_locale="en_US.ISO8859-1")
 def get_locale():
     lang = request.cookies.get('lang')
     if lang in config.LANGUAGES:
-        print "got a lang: "
         return lang
     return request.accept_languages.best_match(config.LANGUAGES)
 
