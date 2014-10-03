@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Bash script to set up virtualenv and run dev server.
 cwd=$(pwd)
 
