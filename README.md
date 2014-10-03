@@ -22,7 +22,6 @@ pybabel update -i messages.pot -d website/translations
 
 To Do:
 * new logo
-* generate events and news
 * new install guide
 * finish css compiler setup (adding bootstrap stuff?)
 * summarize base text for rest of website

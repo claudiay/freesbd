@@ -15,6 +15,8 @@ if app.debug:
 #app.config.from_pyfile('translations.cfg')
 babel = Babel(app, default_locale="en_US.ISO8859-1")
 
+from events import get_rss
+
 
 @babel.localeselector
 def get_locale():
@@ -27,10 +29,10 @@ def get_locale():
 def index():
     from placeholders import news, events, press, security
     return render_template('index.html',
-            news=news,
-            events=events,
-            press=press,
-            security=security
+            news=get_rss('news')[:5],
+            events=get_rss('upcoming')[:5],
+            press=get_rss('press')[:5],
+            security=get_rss('security')[:5],
     )
 
 @app.route('/about')
